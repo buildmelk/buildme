@@ -1,11 +1,12 @@
 doctype html
 html
-    head
+    head(ng-app="myapp")
         title= title
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+
         include bootstrap
+        include angular
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-    body.container-fluid
+    body.container-fluid(ng-app="myapp")
         include navbar
         .container-fluid
             block content

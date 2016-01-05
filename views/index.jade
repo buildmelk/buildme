@@ -1,5 +1,13 @@
 extends layout
 
 block content
-    .row
-        include slider
+    .container(ng-controller="indexCtrl");
+        br
+        .row Pick Your Category
+        br
+        .row( ng-repeat="i in service")
+            h3 {{i}}
+            p aaaaaaaaaaaaaaaaaaaaaaaaaap
+
+        .row
+          //include slider
