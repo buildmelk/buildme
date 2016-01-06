@@ -2,11 +2,16 @@ doctype html
 html
     head
         title= title
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+
         include bootstrap
+        include angular
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-    body.container-fluid
+        meta(name="keywords" content="footer, address, phone, icons" )
+    body.container-fluid(ng-app="myapp")
         include navbar
+        br
+        br
+        br
         .container-fluid
             block content
         include footer
