@@ -9,16 +9,23 @@ nav.navbar.navbar-default.navbar-fixed-top
             span.icon-bar
             span.icon-bar
             span.icon-bar
-         a.navbar-brand(href='#') buildme.lk
+         a.navbar-brand(href='#')
+            b buildme.lk
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
          ul.nav.navbar-nav
             li.active
                a(href='#')
-                  | Link
+                  | Help and Support
                   span.sr-only (current)
+
             li
-               a(href='#') Link
-            li.dropdown
+               a(href='#') About
+
+            li
+               .btn-group.center-block
+                  button.btn.btn-default.navbar-btn සිංහල
+                  button.btn.btn-default.navbar-btn English
+            //li.dropdown
                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                   | Dropdown
                   span.caret
@@ -35,29 +42,12 @@ nav.navbar.navbar-default.navbar-fixed-top
                   li.divider
                   li
                      a(href='#') One more separated link
-         form.navbar-form.navbar-left(role='search')
+         //form.navbar-form.navbar-left(role='search')
             .form-group
                input.form-control(type='text', placeholder='Search')
             button.btn.btn-default(type='submit') Submit
-         ul.nav.navbar-nav.navbar-right
-             li.dropdown
-                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                     | Login
-                     span.caret
-                 ul.dropdown-menu(role='menu')
-                     form.form.navbar-form
-                        .form-group
-                           label(for='exampleInputEmail1') Email address
-                           input#exampleInputEmail1.form-control(type='email', placeholder='Email' style='padding:')
-                        .form-group
-                           label(for='exampleInputPassword1') Password
-                           input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-
-                        .checkbox
-                           label
-                               input(type='checkbox')
-                               |  Agree to Terms and Conditions
-                        button.btn.btn-default(type='submit') login
-
+         ul.nav.navbar-nav.navbar-right.col-md-offset-6
+             button.btn.btn-default.navbar-btn.col-md-6.col-md-offset-5(type='submit')
+                span.glyphicon.glyphicon-user( aria-hidden="true") Login
 
 

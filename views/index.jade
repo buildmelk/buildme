@@ -1,13 +1,29 @@
 extends layout
 
 block content
-    .container(ng-controller="indexCtrl");
+    .container(ng-controller="indexCtrl")
         br
-        .row Pick Your Category
-        br
-        .row( ng-repeat="i in service")
-            h3 {{i}}
-            p aaaaaaaaaaaaaaaaaaaaaaaaaap
+        .row
+            .col-md-4.col-sm-6( ng-repeat="service in ServiceName")
+                a.thumbnail(href="#")
+                    img(src='imgs/1.jpg', alt='...')
+                    .caption
+                        h3 {{service.service}}
+                        P {{service.details}}
+                        //a.btn-primary(href="/#"  role="buttons") button
+            //p aaaaaaa
 
         .row
           //include slider
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
